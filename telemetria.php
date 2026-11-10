@@ -6,5 +6,21 @@ $ping_grezzi[
 
 array_push($ping_grezzi, 55, 190, 12);
 
+$ping_validi = [];
+
+$pacchetti_persi = 0;
+
+foreach ($ping_grezzi as $ping) {
+
+    if ($ping == -1) {
+        $pacchetti_persi++;
+    } 
+    elseif ($ping > 0) {
+        $ping_validi[] = $ping;
+    }
+}
+
+
+
 ?>
 
