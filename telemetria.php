@@ -26,5 +26,23 @@ $ping_massimo = $ping_validi[0];
 
 $ping_critici = [];
 
+foreach ($ping_validi as $ping) {
+
+    $somma += $ping;
+
+    if($ping < $ping_minimo) {
+        $ping_minimo = $ping;
+    }
+
+    if($ping > $ping_massimo) {
+        $ping_massimo = $ping;
+    }
+
+    if($ping > 150) {
+        $ping_critici[] = $ping;
+    }
+
+}
+
 ?>
 
