@@ -24,5 +24,7 @@ $somma = 0;
 $ping_minimo = $ping_validi[0];
 $ping_massimo = $ping_validi[0];
 
+$ping_critici = [];
+
 ?>
 
